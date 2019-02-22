@@ -1,7 +1,7 @@
 
 const discord = require ('discord.js');
 var client =  new discord.Client();
-const TOKEN = 'NTQ3MzcwNjQ3NzEwNTk3MTIw.D06JNg.IxXixCSJFyGWAcbEbYOqMjA-3Ok'
+
 var colArray = ["https://imgur.com/KmxrVvF",
     "https://imgur.com/kM7tm6L",
     "https://imgur.com/QQnRWth",
@@ -481,7 +481,7 @@ client.on ("message", (message) => {
     
 })
 
-client.login (TOKEN)
+client.login(process.env.BOT_TOKEN);
 
 
 
